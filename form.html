@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Form</title>
+</head>
+<body>
+<form method="" action="">
+	<label for="inputname">Name:</label>
+	<input type="text" name="name" id="inputname" required="" placeholder="Yourname">
+	<br>
+
+	<label for="inputemail">Email:</label>
+	<input type="Email" name="Email" id="inputemail" pattern="[a-zA-Z]{8}">
+	<br>
+
+	<label for="inputage">Age</label>
+	<input type="number" name="Age" id="inputage" max="100" min="1" step="5">
+	<br>
+	
+	<input type="hidden" name="oldvalue" value="nana">
+	<br>
+
+	<label for="inputaddress">Address:</label>
+	<textarea id="inputaddress" name="Address" rows="4"></textarea>
+	<br>
+
+	<label for="inputyear">Acamedic Year:</label>
+	<select name="Acamedic_year" id="inputyear">
+		<optgroup label="Choose Acamedic Year">
+			<option value="1">First Year</option>
+			<option value="2">Second Year</option>
+			<option value="3">Third Year</option>
+		</optgroup>
+	</select>
+		<br>
+
+		<label for="inputprofile">Profile:</label>
+		<input type="file" name="profile[]" multiple accept="images/*">
+		<br>
+
+		<input type="submit" name="btnsubmit" value="Save">
+		<input type="reset" name="btnsubmit" value="Cancel">
+	<br>
+	<label>Gender</label>
+	<input type="radio" name="gender" value="Male" id="inputmale" checked="">
+	<label for="inputmale">Male</label> 
+	<input type="radio" name="gender" value="Female" id="inputfemale" >
+	<label for="inputmale">Female</label> 
+<br>
+<label>Hobbies</label>
+<input type="checkbox" name="Hobbies[]" value="football" id="football" checked="">
+<label for="football">Football</label>
+<input type="checkbox" name="Hobbies[]" value="football" id="reading">
+<label for="reading">Reding</label>
+<input type="checkbox" name="Hobbies[]" value="football" id="dancing">
+<label for="dancing">Dancing</label>
+</form>
+</body>
+</html>
